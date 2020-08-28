@@ -6,10 +6,7 @@ export default {
       { hid: 'description', name: 'description', content: 'Meta description' }
     ]
   },
-  // css: [
-  //   'bulma/css/bulma.css',
-  //   '~/css/main.css'
-  // ],
+  css: ['~/assets/main.css'],
   render: {
     bundleRenderer: {
       shouldPreload: (file, type) => {
