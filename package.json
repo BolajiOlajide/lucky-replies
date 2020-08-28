@@ -1,0 +1,19 @@
+{
+  "name": "lucky-replies",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:BolajiOlajide/lucky-replies.git",
+  "author": {
+    "name": "Bolaji Olajide",
+    "url": "https://bolaji.de"
+  },
+  "dependencies": {
+    "nuxt": "^2.14.4"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
+  }
+}
