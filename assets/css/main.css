@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Montaga';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/Montaga-Regular.ttf') format('truetype');
+}
+
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
 /*
@@ -71,7 +79,8 @@ Improve consistency of default fonts in all browsers. (https://github.com/sindre
 */
 
 body {
-	font-family:
+  font-family:
+    'Montaga',
 		system-ui,
 		-apple-system, /* Firefox supports this but not yet `system-ui` */
 		'Segoe UI',

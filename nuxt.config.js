@@ -1,3 +1,7 @@
+import dotenv from 'dotenv'
+
+dotenv.config()
+
 export default {
   head: {
     meta: [
@@ -6,14 +10,18 @@ export default {
       { hid: 'description', name: 'description', content: 'Meta description' }
     ]
   },
-  css: ['~/assets/main.css'],
+  css: ['~/assets/css/main.css'],
   render: {
     bundleRenderer: {
-      shouldPreload: (file, type) => {
+      shouldPreload: (_, type) => {
         return ['script', 'style', 'font'].includes(type)
       }
     }
   },
   buildModules: ['@nuxt/typescript-build'],
-  privateRuntimeConfig: {}
+  privateRuntimeConfig: {
+    TWITTER_API_KEY: process.env.TWITTER_API_KEY,
+    TWITTER_API_SECRET_KEY: process.env.TWITTER_API_SECRET_KEY,
+    TWITTER_BEARER_TOKEN: process.env.TWITTER_BEARER_TOKEN
+  }
 }

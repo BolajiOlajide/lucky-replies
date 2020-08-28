@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "experimentalDecorators": true,
     "target": "es2018",
     "module": "esnext",
     "moduleResolution": "node",
@@ -27,7 +28,6 @@
       "@nuxt/types"
     ]
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"],
+  "files": ["vue-shim.d.ts"]
 }
