@@ -21,7 +21,8 @@ Use a more readable tab size (opinionated).
 
 :root {
 	-moz-tab-size: 4;
-	tab-size: 4;
+  tab-size: 4;
+  --white: #FFF;
 }
 
 /**
@@ -44,7 +45,25 @@ Remove the margin in all browsers.
 */
 
 body {
-	margin: 0;
+  margin: 0;
+
+  /* MY EDIT */
+  background: #29220f;
+  /* fallback for old browsers */
+
+  background: -webkit-linear-gradient(151deg, rgb(41, 34, 15) 4%, rgb(239, 132, 106) 91%);
+  /* Chrome 10-25, Safari 5.1-6 */
+
+  background: linear-gradient(151deg, rgb(41, 34, 15) 4%, rgb(239, 132, 106) 91%);
+  background-repeat: no-repeat;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* end edit */
 }
 
 /**
